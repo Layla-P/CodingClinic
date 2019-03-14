@@ -16,7 +16,7 @@ canonifyurls    = true
   subtitle    = "Workshops"
   copyright   = "© 2019"
 
-  cover       = "images/common/"
+  cover       = "images/common/banner.jpg"
   description = "Here is a description of your site."
   metaDescription = ""
   googleAnalytics = ""

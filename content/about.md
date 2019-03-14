@@ -10,3 +10,7 @@ type = "page"
 weight = 111
 
 +++
+
+A site with coding workshops!
+
+More details to come!

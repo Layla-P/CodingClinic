@@ -1,0 +1,18 @@
+.site-header:before {
+    bottom: 0;
+    background: rgba(255,255,255,0.6);
+}
+.blog-header{
+    color:#6a6869;
+    font-size: 12rem;
+}
+
+.site-title{
+     color:#6a6869;
+    font-size: 12rem;
+}
+.site-description{
+     color:#6a6869;
+    font-size: 3.2rem;
+    font-weight:600;
+}

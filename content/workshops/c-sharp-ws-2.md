@@ -37,51 +37,70 @@ namespace HelloWorld
 ```
 It has a `Program` class with a `Main` method inside it. Don't worry about what a class or a method is as yet, we'll get to that later.
 
-The `Console.WriteLine("Hello World!");` is what printed "Hello World!" inside our console.  Change the contents of the `"` marks to say `"Hello, what is your name?"` as shown below.
+There is some code in this `Program.cs` file that is just not important at the moment, so let's get rid of it.  You code should look like this now:
+
+```csharp
+using System;
+ class Program
+{
+   static void Main(string[] args)
+   {
+        Console.WriteLine("Hello World!");
+    }
+}
+```
+
+The `Console.WriteLine("Hello World!");` is what printed "Hello World!" inside our console.  Change the contents of the `"` marks to say `"Hello, Milton Keynes."` as shown below.
+
 ```csharp
 static void Main(string[] args)
 {
-   Console.WriteLine("Hello, what is your name?");
+   Console.WriteLine("Hello, Milton Keynes.");
 }
 ```
-Now if we run the project from the console, using `>dotnet run` again, you should see that our question is printed to the console instead.
+Now if we run the project from the console, using `>dotnet run` again, you should see that our update is printed to the console instead.
 
 ## What's going on?
-.NET comes with a whole load of ready-made code us to use in the form of *libraries*. See the `using System` at the top of the `Program.cs` file? That's us saying that we want to use the System library, which is provided by Microsoft. Inside these libraries, we have methods or functions that we can use or call.
-
-`Console.WriteLine();` is a method from the System library that, in this case, takes a string and then writes that string to the console.
-
-## What's a string?
-C# is what's known as a *strongly-typed* language. A *string* is a type. It means that the contents will be treated as text.  There are many types and you can create your own types, often called models.  We will cover more types in a later workshop so don't worry about these now.
-Let's see if we can get input from the console.
+.NET comes with a whole load of ready-made code us to use in the form of *libraries*. See the `using System` at the top of the `Program.cs` file? That's us saying that we want to use the System library, which is provided by Microsoft. Inside these libraries, we have methods or functions that we can use or call. `Console.WriteLine` is one of these methods.
 
 Update your `Main` method inside your `Program` class to the following:
 
 ```csharp
 static void Main(string[] args)
 {
+   var hello = "Hello";
+   var name = "your name";
+   Console.WriteLine(hello + name);
+}
+```
+
+Now we have created two *variables* called `hello` and `name` and given them the values of "Hello" and "your name", respectively.
+We have then added our two *variables* together using the `+` sign and put them in the `Console.WriteLine`.
+The above will combine our two sentences and output them to the console.
+But if you run this you may see that there is no space between our words where they join.
+You have to add the space yourself if it's needed like so:
+
+```csharp
+Console.WriteLine(hello + " " + name);
+```
+
+We can also take input from the console using `Console.ReadLine()`.  Let's ask a question this time.  Let's update our code to look like the following.
+
+```csharp
+static void Main(string[] args)
+{
    Console.WriteLine("Hello, what is your name?");
-   string name;
-   name = Console.ReadLine();
+   var name = Console.ReadLine();
    Console.WriteLine("Your name is " + name);
 }
 ```
 <br/><br/>
-Now we have *declared* a *variable* called `name`, of type *string*. Whatever we type into the console will be stored in this variable because we have *assigned* the output of `Console.readLine` to it.
 
-We then use another call to `Console.Writeline()` this time passing in a string and our variable, which is also a string.  We can use the `+` sign to combine these.
+In this code, we set the value of the user input to be equal to the *variable* `name`.
 
-## Improving what we have
-The above code is okay but we can make it a little bit better. This is called *refactoring*.
-We can do a declaration and assignation on one line so we now have:
-```csharp
-string name = Console.ReadLine();
-```
-<br/><br/>
-.NET is clever and most of the time it can tell what type a variable is so instead of `string` we can use `var`.
-```csharp
-var name = Console.ReadLine();
-```
+We then use another call to `Console.Writeline()`, this time passing in some text and our variable using the `+` sign to combine these.
+
 <br/>
-So in this workshop, we have learned to take input from a user, assign that to a variable and then combine that input with another string, outputting that to the screen!
+So in this workshop, we have learned to take input from a user, assign that to a variable and then combine that input some text, outputting that to the screen!
 
+If you are happy with these concepts, perhaps have a play with `Console.Write()` instead of `Console.WriteLine()` and see what happens.
