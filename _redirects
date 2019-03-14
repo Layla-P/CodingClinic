@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://admiring-cori-168b1d.netlify.com/* http://coding.clinic/:splat 301!

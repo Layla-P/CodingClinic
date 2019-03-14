@@ -1,0 +1,54 @@
+# baseURL = "http://example.org/"
+# languageCode = "en-us"
+# title = "My New Hugo Site"
+# theme = "hugo-casper-two"
+
+baseurl         = "/"
+theme           = "hugo-casper-two"
+languageCode    = "en-US"
+disqusShortname = ""
+paginate        = 6
+#SectionPagesMenu = "main"
+canonifyurls    = true
+
+[params]
+  title       = "Coding Clinic"
+  subtitle    = "Workshops"
+  copyright   = "© 2019"
+
+  cover       = "images/common/"
+  description = "Here is a description of your site."
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = ["css/custom.css"]
+  RSSLink = ""
+
+  twitterName = "laylacodesit"
+  githubName = "layla-p"
+  linkedinName = "layla-porter-12433b3b"
+  #mediumName = ""
+
+  #logo = "/images/common/Layla-8bit.png"
+  # orgName = "EM"
+  # orgWebsite = "https://www.telematika.org"
+  # orgDescription = "Here is a description placeholder for your org"
+
+  showSupport = true
+
+  author = "LP"
+  authorAvatar = "images/common/layla.jpg"
+  authorLocation = "UK"
+  authorWebsite = "https://laylacodes.it"
+  authorDescription = "Layla is a developer evangelist at Twilio"
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  [permalinks]
+  post = "/post/:slug/"
+  workshop = "/workshop/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 200
+
