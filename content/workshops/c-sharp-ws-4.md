@@ -23,6 +23,7 @@ static void Main(string[] args)
    Console.WriteLine(hello + name);
 }
 ```
+</br>
 What if my variables only have numbers in it? What happens when we add them together?
 
 Let's update our code now to the following
@@ -34,6 +35,7 @@ static void Main(string[] args)
    Console.WriteLine(numberOne + numberTwo);
 }
 ```
+</br>
 Even if *variables* only contain numbers, the program will still treat them like text and not numbers.  So if we add the above two strings we will get the output of `"73"` and not `"10"` like we may want.
 
 This is a really good time to return to *types*.
@@ -49,6 +51,7 @@ Up until now, we have been working with data type known as a *string*. It treats
 var someText = "This is a string of text";
 string moreText = "More text";
 ```
+</br>
 You may have noticed that on the second *variable*, `string` was used instead of `var` in front of the variable name. This is known as *explicitly* typing a variable. When we use `var` the computer program makes a guess at what the type will be based on the value set. More on this later.
 
 We know that we can add two strings together like so:
@@ -56,15 +59,18 @@ We know that we can add two strings together like so:
 ```csharp
 var combinedText = someText + moreText;
 ```
+</br>
 The above will combine our two sentences, but you have to add the space yourself if it's needed like so:
 ```csharp
 var combinedText = someText + " " + moreText;
 ```
+</br>
 Now, earlier we saw that adding two numbers together, didn't work as we might expect.
 ```csharp
 var someText = "27";
 var moreText = "13";
 ```
+</br>
 Even if your string only contains numbers, the datatype will still be a string.  So if we add the above two strings we will get the output of `"2713"` and not `"40"`.
 We can try and turn these strings into a different data type, such as an *int* which is an integer data type, where inteher is the formal word to describe a whole number.
 
@@ -76,17 +82,19 @@ An *int* data type can only have values that are integers or whole numbers.
 var someInt = 27;
 var anotherInt = 13;
 ```
+</br>
 Note that we no longer surround our numbers with `"`. This means that the computer will *infer* the data type is an *int*. If we wanted to be explicit we could use the following, telling the computer that we want the *variable* to be an *int*:
 
 ```csharp
 int someInt = 27;
 int anotherInt = 13;
 ```
-
+</br>
 If we were to add these two variables together like so:
 ```csharp
 var combinedInt = someInt + anotherInt;
 ```
+</br>
 We would get the expected result of `40`.
 
 So how do we make a *string* into an *int*?
@@ -99,6 +107,7 @@ int myInt;
 int.TryParse(someText, out myInt);
 Console.WriteLine(myInt);
 ```
+</br>
 This is using the `TryParse` method provided for us in `System`, the library of methods that Microsoft provide us within the SDK. There are a few extra things about this method like `out` but don't worry about that now.
 
 If `someText` can be turned into an integer, the method will assign the variable `myInt` with the value,  in this case,  `27`.
@@ -111,6 +120,7 @@ int myInt;
 int.TryParse(someText, out myInt);
 Console.WriteLine(myInt);
 ```
+</br>
 There are many different data types available, you can even create your own.
 But don't worry if this seems strange or complicated.  As we start to use these types, it will start to make more sense.
 
@@ -127,7 +137,7 @@ int.TryParse(numberString, out number);
 
 //write you if/else statement here
 ```
-
+</br>
 You may have noticed the line above starting with two slashes.  This is a comment. Comments allow you to make notes in your code that is ignored by the computer. There are two types:
 
 * Single line comments (denoted with //)

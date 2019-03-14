@@ -27,6 +27,7 @@ static void Main(string[] args)
 }
 
 ```
+</br>
 In this code, we are doing a check to see if the value of `myColourVariable` has the value of "red". In this case, the value is "blue" so the program will write `false` to the console.
 
 We can also compare two variables, as shown below:
@@ -36,6 +37,7 @@ var myColourVariable = "blue";
 var myOtherColourVariable = "red";
 Console.WriteLine(myColourVariable == myOtherColourVariable);
 ```
+</br>
 It's important to note that "Red" would not be equal to "red" as comparisons are case sensitive.
 
 Comparisons are really key for understanding how conditional statements work. Let's look at the most common conditional statement, the if/else statement.
@@ -55,7 +57,7 @@ static void Main(string[] args)
    var colour = Console.ReadLine();
 }
 ```
-
+</br>
 So we now know what colour our user prefers, let's do something based on that, but first, we will need to compare their result against the options.
 
 ```csharp
@@ -72,6 +74,7 @@ static void Main(string[] args)
    }
 }
 ```
+</br>
 Try typing "red" into your program and see what happens.
 Now in the above code, if our use wrote anything other than "green" the program will write whatever is in the `else` part of the statement.
 
@@ -93,4 +96,5 @@ static void Main(string[] args)
    }
 }
 ```
+</br>
 There are several other types of conditional statement. If you feel like it, you could research some of the others and have a play with them.

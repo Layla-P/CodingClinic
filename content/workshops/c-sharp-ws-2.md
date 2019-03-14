@@ -35,6 +35,7 @@ namespace HelloWorld
    }
 }
 ```
+</br>
 It has a `Program` class with a `Main` method inside it. Don't worry about what a class or a method is as yet, we'll get to that later.
 
 There is some code in this `Program.cs` file that is just not important at the moment, so let's get rid of it.  You code should look like this now:
@@ -49,7 +50,7 @@ using System;
     }
 }
 ```
-
+</br>
 The `Console.WriteLine("Hello World!");` is what printed "Hello World!" inside our console.  Change the contents of the quote marks to say `"Hello, Milton Keynes."` as shown below.
 
 ```csharp
@@ -58,6 +59,7 @@ static void Main(string[] args)
    Console.WriteLine("Hello, Milton Keynes.");
 }
 ```
+</br>
 Now if we run the project from the console, using `>dotnet run` again, you should see that our update is printed to the console instead.
 
 ## What's going on?
@@ -73,7 +75,7 @@ static void Main(string[] args)
    Console.WriteLine(hello + name);
 }
 ```
-
+</br>
 Now we have created two *variables* called `hello` and `name` and given them the values of "Hello" and "your name", respectively.
 We have then added our two *variables* together using the `+` sign and put them in the `Console.WriteLine`.
 The above will combine our two sentences and output them to the console.
@@ -83,7 +85,7 @@ You have to add the space yourself if it's needed. Below is one way you could do
 ```csharp
 Console.WriteLine(hello + " " + name);
 ```
-
+</br>
 We can also take input from the console using `Console.ReadLine()`.  Let's ask a question this time.  Update the code to the following.
 
 ```csharp
@@ -94,13 +96,11 @@ static void Main(string[] args)
    Console.WriteLine("Your name is " + name);
 }
 ```
-<br/><br/>
-
+<br/>
 In this code, we set the value of the user input to be equal to the *variable* `name`.
 
 We then use another call to `Console.Writeline()`, this time passing in some text and our variable using the `+` sign to combine these.
 
-<br/>
 So in this workshop, we have learned to take input from a user, assign that to a variable and then combine that input some text, outputting that to the screen!
 
 If you are happy with these concepts, perhaps have a play with `Console.Write()` instead of `Console.WriteLine()` and see what happens.
