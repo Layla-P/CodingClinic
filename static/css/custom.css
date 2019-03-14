@@ -16,3 +16,12 @@
     font-size: 3.2rem;
     font-weight:600;
 }
+
+.nav li a {
+    font-weight: 600;
+    font-size: 2rem;    
+    color:#6a6869;
+}
+.social-link svg {
+   fill:#6a6869; 
+}
