@@ -33,7 +33,7 @@ You should see something similar to this
 <br/><br/>
 Now that we know the SDK is installed correctly we can make our first application.
 When you open the command line it will most likely open in a certain folder or directory on your computer.
-If you type in `ls` and press enter, you should see a list of all the folders and files in the current directory.
+If you type in `ls` on Mac/Linux and `dir` on Windows and press enter, you should see a list of all the folders and files in the current directory.
 <br/><br/>
 We need to create a new directory for our code to live in.
 To make a new directory we will use the following command:
@@ -43,11 +43,11 @@ To make a new directory we will use the following command:
 ```
 </br>
 This will create a folder called `MyCode` on your computer.
-If you type in `ls` again, you should see we now have a new directory called Repos.
+If you type in `ls` again, you should see we now have a new directory called MyCode.
 We now need to change directory (cd) so that our command line is inside our new folder.
 
 ```
->cd Repos
+>cd MyCode
 ```
 </br>
 Now we are in the right folder, let's create a new .NET project.
