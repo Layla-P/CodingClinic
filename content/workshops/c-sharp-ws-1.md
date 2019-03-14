@@ -21,10 +21,10 @@ We will also be using the command line to create and run our application.
 
 ## Setting up our development environment.
 
-To get started with C# we will need to download a Software Development Kit, or SDK. C# runs on a framework called .NET (dot net) and we will download the .NET SDK here. We will specifically be using the .NET Core framework as it works on Windows, Mac and Linux - known as cross-platform.
+To get started with C# we will need to download a [Software Development Kit](https://dotnet.microsoft.com/download), or SDK. C# runs on a framework called .NET (dot net) and we will download the .NET SDK here. We will specifically be using the .NET Core framework as it works on Windows, Mac and Linux - known as cross-platform.
 Choose the correct download for your operating system, e.g. Windows, and follow the installation instructions.
 
-We will also need a code editor to enable us to edit our code.  Visual Studio Code is a free and very versatile editor, so let's download that one, again, choosing the right download for your operating system.
+We will also need a code editor to enable us to edit our code.  [Visual Studio Code](https://code.visualstudio.com/download) is a free and very versatile editor, so let's download that one, again, choosing the right download for your operating system.
 
 To check if the .NET SDK installed correctly, open the console and type in `dotnet` and press enter.
 You should see something similar to this
@@ -33,17 +33,16 @@ You should see something similar to this
 <br/><br/>
 Now that we know the SDK is installed correctly we can make our first application.
 When you open the command line it will most likely open in a certain folder or directory on your computer.
-If you type in `ls` and press enter, you should see a list of all the folders and files in the current directory.  It may look something like this:
-
+If you type in `ls` and press enter, you should see a list of all the folders and files in the current directory.
+<br/><br/>
 We need to create a new directory for our code to live in.
 To make a new directory we will use the following command:
 
 ```
->mkdir Repos
+>mkdir MyCode
 ```
 </br>
-Repos is short for repositories.  A repository is a place where your coding files can be stored.
-
+This will create a folder called `MyCode` on your computer.
 If you type in `ls` again, you should see we now have a new directory called Repos.
 We now need to change directory (cd) so that our command line is inside our new folder.
 
