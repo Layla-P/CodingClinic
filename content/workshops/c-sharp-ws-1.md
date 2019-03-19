@@ -21,7 +21,7 @@ We will also be using the command line to create and run our application.
 
 ## Setting up our development environment.
 
-To get started with C# we will need to download a [Software Development Kit](https://dotnet.microsoft.com/download), or SDK. C# runs on a framework called .NET (dot net) and we will download the .NET SDK here. We will specifically be using the .NET Core framework as it works on Windows, Mac and Linux - known as cross-platform.
+To get started with C# we will need to download a Software Development Kit, or SDK. C# runs on a framework called .NET (dot net) and we will download the [.NET Core SDK here](https://dotnet.microsoft.com/download). We will specifically be using the .NET Core framework as it works on Windows, Mac and Linux - known as cross-platform.
 Choose the correct download for your operating system, e.g. Windows, and follow the installation instructions.
 
 We will also need a code editor to enable us to edit our code.  [Visual Studio Code](https://code.visualstudio.com/download) is a free and very versatile editor, so let's download that one, again, choosing the right download for your operating system.
