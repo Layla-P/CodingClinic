@@ -13,7 +13,7 @@ description: "Now we have the basics we can start to layer in some more ideas. I
 
 A lot about what computer programs do is based on decision making.  Computers can't make those decisions so we need a way to program this and we can use something called a *conditional statement*.
 
-There are several different types of *conditional statement*but before we look at those, we just need to understand comparisons first.
+There are several different types of *conditional statement* but before we look at those, we just need to understand comparisons first.
 
 ### Comparisons
 
